@@ -13,8 +13,12 @@ print("---------------")
 currentYear = input("Current Year ? ")
 yearOfBirth = input("Year of Bith ? ")
 
-currentYear = int(currentYear)
-yearOfBirth = int(yearOfBirth)
+try:
+    currentYear = int(currentYear)
+    yearOfBirth = int(yearOfBirth)
+except:
+    print("This is not a year")
+    exit(0)
 
 if((currentYear > 2019) or (yearOfBirth > 2019)):
     print("We are not yet there!")
@@ -28,7 +32,12 @@ else:
         print("Your age", your_age)
 
 yearOfBirthNextToYou = input("This mate Year of Birth ? " )
-yearOfBirthNextToYou = int(yearOfBirthNextToYou)
+
+try:
+    yearOfBirthNextToYou = int(yearOfBirthNextToYou)
+except:
+    print("This is not a year")
+    exit(0)
 
 if(yearOfBirthNextToYou > 2019):
     print("We are not yet there!")
