@@ -27,7 +27,7 @@ else:
         your_age = currentYear - yearOfBirth
         print("Your age", your_age)
 
-yearOfBirthNextToYou = input("This mate Year of Bith ? " )
+yearOfBirthNextToYou = input("This mate Year of Birth ? " )
 yearOfBirthNextToYou = int(yearOfBirthNextToYou)
 
 if(yearOfBirthNextToYou > 2019):
@@ -91,10 +91,10 @@ Fn_suffix = family_name[len(family_name)-1].upper()
 n_prefix = name[0].upper()
 n_suffix = name[len(name)-1].upper()
 
-print("Short family name {}{}".format(Fn_prefix,Fn_suffix))
-print("Short name {}{}".format(n_prefix,n_suffix))
+print("Short family name: {}{}".format(Fn_prefix,Fn_suffix))
+print("Short name: {}{}".format(n_prefix,n_suffix))
 
-print("Combined short name {}{}{}{}".format(Fn_prefix,Fn_suffix,n_prefix,n_suffix))
+print("Combined short name: {}{}{}{}".format(Fn_prefix,Fn_suffix,n_prefix,n_suffix))
 
 age = input("Hey what's your age ? ")
 age = int(age)/33
