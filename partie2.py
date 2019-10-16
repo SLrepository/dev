@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import datetime
+
 ## 1\.Exercice 1 : True ou False ?
 print("\nExercise Nr. #1")
 print("---------------")
@@ -10,6 +12,7 @@ print(len(str2)==0)
 ## 2\.Exercice 2 : Calculer mon âge
 print("\nExercise Nr. #2")
 print("---------------")
+date = datetime.datetime.now()
 currentYear = input("Current Year ? ")
 yearOfBirth = input("Year of Bith ? ")
 
@@ -20,16 +23,12 @@ except:
     print("This is not a year")
     exit(0)
 
-if((currentYear > 2019) or (yearOfBirth > 2019)):
-    print("We are not yet there!")
+if((currentYear > date.year) or (yearOfBirth > date.year)):
+    print("You already live in the futur")
     exit(0)
 else:
-    if(yearOfBirth > currentYear):
-        print("You already live in the futur")
-        exit(0)
-    else:
-        your_age = currentYear - yearOfBirth
-        print("Your age", your_age)
+    your_age = currentYear - yearOfBirth
+    print("Your age", your_age)
 
 yearOfBirthNextToYou = input("This mate Year of Birth ? " )
 
@@ -39,18 +38,14 @@ except:
     print("This is not a year")
     exit(0)
 
-if(yearOfBirthNextToYou > 2019):
-    print("We are not yet there!")
+if(yearOfBirthNextToYou > date.year):
+    print("You already live in the futur")
     exit(0)
 else:
-    if(yearOfBirthNextToYou > currentYear):
-            print("You already live in the futur")
-            exit(0)
-    else:
-        cumulated_age = currentYear - yearOfBirthNextToYou
-        print("Your mate age", cumulated_age)
-        cumulated_age += your_age
-        print("Your cumulated age", cumulated_age)
+    cumulated_age = currentYear - yearOfBirthNextToYou
+    print("Your mate age", cumulated_age)
+    cumulated_age += your_age
+    print("Your cumulated age", cumulated_age)
 
 ## 3\.Exercice 3 : Problème de chaussures
 print("\nExercise Nr. #3")
