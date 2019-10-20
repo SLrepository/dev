@@ -50,7 +50,7 @@ for x in range(101):
    print(x)
 
 ## 5\.Exercice 5 : Des nombres en boucle bis
-print("\nExercice 4 : Des nombres en boucle BIS")
+print("\nExercice 5 : Des nombres en boucle BIS")
 
 for x in range(101):
    if x%2 == 0:
@@ -66,8 +66,7 @@ def pool_filing(long, larg, prof, debit):
 pool_filing(9, 9, 9, 9)
 
 ## 7\.Exercice 7 : Calcul de cercle
-print("\n## 7\.Exercice 7 : Calcul de cercle")
-
+print("\nExercice 7 : Calcul de cercle")
 def Périmètre(rayon):
    périmètre = round((2*math.pi*rayon), 2)
    print("votre cercle a un périmètre de {} cm".format(périmètre))
@@ -81,7 +80,7 @@ Périmètre(rayon)
 Aire(rayon)
 
 ## 8\.Exercice 8 : Une pyramide
-print("\n## 8\.Exercice 8 : Une pyramide")
+print("\nExercice 8 : Une pyramide")
 
 Var_0 = "```"
 Var_1 = "\n"
@@ -95,7 +94,7 @@ for i in range(1, 6):
 print(Var_1 + Var_0)
 
 ## 9\.Exercice 9 : FIZZ BUZZ
-print("\n## 9\.Exercice 9 : FIZZ BUZZ")
+print("\nExercice 9 : FIZZ BUZZ")
 fizbuz = ""
 for i in range(1, 101):
    if i%3 == 0:
@@ -106,3 +105,4 @@ for i in range(1, 101):
        fizbuz = "BUZZ"
    print("{} - {}".format(i, fizbuz))
    fizbuz = ""
+   
