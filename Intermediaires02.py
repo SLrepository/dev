@@ -67,7 +67,7 @@ print("Resultat = ",fact(nb))
 ## 5\.Exercice 5 : Les tirets ça compte !
 print("\nExercice 5 : Les tirets ça compte !")
 
-def convertHyphenintoUnderscore(theString):
+def convertHyphenintoUnderscore1(theString):
     try:
         isNB = float(theString)
         if float(isNB):
@@ -84,11 +84,24 @@ def convertHyphenintoUnderscore(theString):
             myReturn = theString
     return(myReturn)
 
+
+def convertHyphenintoUnderscore2(theString):
+    return(theString.replace('-','\_'))
+
 myString = input("Entrez votre ligne de facturation : ")
-print(convertHyphenintoUnderscore(myString))
+print(convertHyphenintoUnderscore1(myString))
+print(convertHyphenintoUnderscore2(myString))
+
+
 
 ## 6\.Exercice 6 : Entraînez-vous avec les tableaux
 print("\nExercice 6 : Entraînez-vous avec les tableaux")
+
+
+listeDeCourse =["jambon","pain","fromage","cumin"]
+print("Vous devez acheter du {}".format(listeDeCourse[0]))
+print("Mais aussi du {}".format(listeDeCourse[-1]))
+print("Et également du {}".format(listeDeCourse[2]))
 
 ## 7\.Exercice 7 : Le tableau d'un homme
 print("\nExercice 7 : Le tableau d'un homme")
