@@ -105,10 +105,50 @@ print("Et également du {}".format(listeDeCourse[2]))
 
 ## 7\.Exercice 7 : Le tableau d'un homme
 print("\nExercice 7 : Le tableau d'un homme")
+# 
+ecce_homo = [["\nvladimir", "poutine", "7 Octobre 1952", "67 ans"],["\nvladimir", "ilitch", "21 Janvier 1924", "53 ans"],["\nvladimir", "cosma", "13 Avril 1940", "79 ans"]]
+
+def showTheMan(details):
+    print("\n")
+    for j in range(len(details)):
+        for i in range(len(details[j])):
+            print(details[j][i])
+    
+showTheMan(ecce_homo)
 
 ## 8\.Exercice 8 : Le max d'un tableau
 print("\nExercice 8 : Le max d'un tableau")
 
+mylist = [123,52,67,256,10]
+mylist2 = ["AA","AAA","AAA","AAAAA","AAAA"]
+mylist3 = ["GNU", 125, "Frei", 1048]
+
+def findMax(array):
+    try:
+        print(max(array))
+    except:
+        print("You are going completely bersek, you are just:")
+        print(False)
+
+findMax(mylist)
+findMax(mylist2)
+findMax(mylist3)
+
+
 ## 9\.Exercice 9 : Une to do list
 print("\nExercice 9 : Une to do list")
+
+myToDoList = []
+
+while True:
+    myTask = input("Please enter your task (type \"fin\" to exit) ")
+    if "fin" in myTask:
+        break
+    myToDoList.append(myTask)
+
+for i in range(len(myToDoList)):
+    print(myToDoList[i])
+
+
+
 
