@@ -89,8 +89,9 @@ def convertHyphenintoUnderscore2(theString):
     return(theString.replace('-','\_'))
 
 myString = input("Entrez votre ligne de facturation : ")
+string2 = myString
 print(convertHyphenintoUnderscore1(myString))
-print(convertHyphenintoUnderscore2(myString))
+print(convertHyphenintoUnderscore2(string2))
 
 
 
