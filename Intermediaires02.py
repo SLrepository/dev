@@ -114,8 +114,14 @@ def showTheMan(details):
     for j in range(len(details)):
         for i in range(len(details[j])):
             print(details[j][i])
-    
+
+def showList(theList):
+    for List in theList:
+        for inlist in List:
+            print(inlist)
+
 showTheMan(ecce_homo)
+showList(ecce_homo)
 
 ## 8\.Exercice 8 : Le max d'un tableau
 print("\nExercice 8 : Le max d'un tableau")
@@ -128,12 +134,13 @@ def findMax(array):
     try:
         print(max(array))
     except:
-        print("You are going completely bersek, you are just:")
+        print("You are going completely bersek, this is just:")
         print(False)
 
 findMax(mylist)
 findMax(mylist2)
 findMax(mylist3)
+
 
 
 ## 9\.Exercice 9 : Une to do list
