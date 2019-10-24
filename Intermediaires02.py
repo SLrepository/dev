@@ -159,4 +159,8 @@ for i in range(len(myToDoList)):
 
 
 
+etoile = "*"
+for taille in range(1,6):
+    print(etoile * taille)
+
 
